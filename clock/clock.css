@@ -1,0 +1,38 @@
+
+body {
+    background-color: black;
+}
+
+        /* text styles */
+
+.header {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 200;
+    color: white;
+    background-color: #002233;
+    border-style: inset;
+    
+}
+
+.clock {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 200;
+    color: white;
+}
+
+.container {
+    background-color: #004466;
+    padding: 50px 40px 50px 40px;
+    margin: 100px 10px 100px 10px;
+    border-style: inset;
+   
+}
+h1 {
+    max-width: 100%;
+    background-color: #002233;
+    border-style: inset;
+}
+
+            /*end text styles */
