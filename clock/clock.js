@@ -46,14 +46,14 @@ function simpleClock() {
 
     let year = date.getFullYear();
     let month = date.getMonth();
-    let day = date.getHours();
+    let day = date.getDay();
 
 
 
-    document.getElementById("time-display").textContent = ` ${months}, ${weekDays}, ${year}`;
+    document.getElementById("time-display").textContent = months[date.getMonth()] + ' ' + date.getFullYear() + " " + weekDays[date.getDay()];
 
 
-
+    months[date.getMonth()] + ' ' + date.getFullYear();
 
 
     document.getElementById("date-display").textContent = ` ${hours} : ${minutes} : ${seconds}`;
