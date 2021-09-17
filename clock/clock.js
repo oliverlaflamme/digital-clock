@@ -50,7 +50,7 @@ function simpleClock() {
 
 
 
-    document.getElementById("time-display").textContent = months[date.getMonth()] + ' ' + date.getFullYear() + " " + weekDays[date.getDay()];
+    document.getElementById("time-display").textContent = months[date.getMonth()] + ' ' + date.getFullYear() + " " + weekDays[date.getDay()] + " " + [date.getDay()] + ("th");
 
 
     months[date.getMonth()] + ' ' + date.getFullYear();
