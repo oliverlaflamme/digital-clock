@@ -48,15 +48,17 @@ function simpleClock() {
     let month = date.getMonth();
     let day = date.getDay();
 
+    // even by selecting  get days VALUE FROM MY VARIABLE LET DAY its still showing up as saturday"
+    console.log("today is " + weekDays[day]);
+    console.log(new Date); // this display the right day 
 
+    // IS MY MONTH ALSO RIGHT OR AM I JUST SEPTEMBER RANDOMLY LUCKY ?
 
     document.getElementById("time-display").textContent = months[date.getMonth()] + ' ' + date.getFullYear() + " " + weekDays[date.getDay()] + " " + [date.getDay()] + ("th");
 
 
-    months[date.getMonth()] + ' ' + date.getFullYear();
 
 
-    document.getElementById("date-display").textContent = ` ${hours} : ${minutes} : ${seconds}`;
 
     if (seconds < 10) {
         seconds = "0" + seconds;
@@ -76,6 +78,14 @@ function simpleClock() {
     } else {
         seconds = seconds + "Pm";
     }
+
+    if (hours === 0) {
+        hours = 12;
+    }
+
+
+
+    document.getElementById("date-display").textContent = ` ${hours} : ${minutes} : ${seconds}`;
 
 
 }
