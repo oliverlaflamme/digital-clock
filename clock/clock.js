@@ -55,6 +55,7 @@ function simpleClock() {
 
 
 
+
     document.getElementById("date-display").textContent = ` ${hours} : ${minutes} : ${seconds}`;
 
     if (seconds < 10) {
@@ -70,6 +71,11 @@ function simpleClock() {
     }
 
 
+    if (hours <= 12) {
+        seconds = seconds + "AM";
+    } else {
+        seconds = seconds + "Pm";
+    }
 
 
 }
